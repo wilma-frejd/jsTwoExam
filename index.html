@@ -1,13 +1,28 @@
 <!doctype html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>jstwoexam</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <h1>Send message</h1>
+
+    <form id="myForm">
+      <div>
+        <label>Namn</label>
+        <input type="text" id="name" required>
+      </div>
+
+      <div>
+        <label">Meddelande</label>
+        <textarea id="message" required></textarea>
+      </div>
+
+      <button type="submit">Skicka till servern</button>
+    </form>
+    <div id="response"></div>
+
+    <script type="module" src="/src/frontend/router.ts"></script>
   </body>
 </html>
